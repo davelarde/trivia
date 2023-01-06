@@ -22,6 +22,9 @@ fetchApi = async()=>{
     console.error(`error ${error} fetching TRIVIA_API`)
   }
 };
+componentDidMount(){
+  this.fetchApi();
+}
 
   render() {
     return (
