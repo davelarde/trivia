@@ -5,7 +5,12 @@ const category = '';
 const TRIVIA_API = `https://opentdb.com/api.php?amount=1&category=${category}&difficulty=easy`;
 
 class App extends Component {
-
+constructor(){
+  super()
+  this.state ={
+    question: null
+  }
+}
 
   render() {
     return (
